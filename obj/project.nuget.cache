@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XsKS2fNJ6ZX5ZwSQqyRspehO517NV7RWUlaP+W5ZF/GOxX7NG9LwtVtK1DhK9pWJDCMqnzdPnU7LNJfQ0R1ecw==",
+  "dgSpecHash": "NKdbKal8e1RUP5aeCAUCL13nYSklEU9LLtRgC34TVN5EhfPqGr+/zJUFf0lBVjzN1lHtqIcCrWmNzPIvNmtnNg==",
   "success": true,
   "projectFilePath": "D:\\workspace\\backend\\csharp\\book1\\heist2\\heist2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\grass\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

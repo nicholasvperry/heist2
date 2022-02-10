@@ -3,19 +3,21 @@ namespace heist2
 {
     public class LockSpecialist : IRobber
     {
-        public string name { get; set; }
+        public string Name { get; set; }
         public int SkillLevel { get; set; }
+        public string Type {get{return "Lock Pick";}}
+
         public int PercentageCut { get; set; }
 
          public void PerformSkill(Bank bank)
         { 
-            int reducedSkill = bank.VaultScore - SkillLevel;
+            bank.VaultScore -= SkillLevel;
             
-            Console.WriteLine($"{name} is picking the locks. Decreased security by {SkillLevel} points.");
+            Console.WriteLine($"{Name} is picking the locks. Decreased security by {SkillLevel} points.");
 
-            if(reducedSkill <= 0)
+            if(bank.VaultScore <= 0)
             {
-                Console.WriteLine($"{name} has picked the lock!");
+                Console.WriteLine($"{Name} has picked the lock!");
             }         
         }
     }
